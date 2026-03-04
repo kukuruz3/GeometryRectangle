@@ -48,23 +48,11 @@ namespace GeometryRectangle
                 _height = value;
             }
         }
-        public double Perimeter
-        {
-            get { return 2 * (_width + _height); }
-        }
-        public double Area
-        {
-            get { return _width * _height; }
-        }
-        public double Right
-        {
-            get { return _x + _width; }
-        }
-
-        public double Bottom
-        {
-            get { return _y + _height; }
-        }
+        
+        public double Perimeter => 2 * (_width + _height);
+        public double Area => _width * _height;
+        public double Right => _x + _width;
+        public double Bottom => _y + _height;
 
         public void Move(double deltaX, double deltaY)
         {
